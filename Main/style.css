@@ -75,6 +75,10 @@ body {
 .sidebar p:hover {
     text-shadow: 0 0 7px rgba(150, 117, 117, 0.5);   
 }
+.sidebar a{
+    color: inherit;
+    text-decoration: none;
+}
 @keyframes tremor {
     0% { transform: translateX(0); }
     25% { transform: translateX(-2px); }
