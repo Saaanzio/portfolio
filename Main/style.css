@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300&display=swap');
+
+body {
+    background: linear-gradient(to right, #1a1a2e, #2a2a3e);
+    height: 100vh;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        'header header'
+        'main sidebar'
+        'footer footer';
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.main h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 7rem;
+    margin: 0;
+    width: 90%;
+    transition: text-shadow 0.3s ease-in-out;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 25%;
+    margin: 30px;
+    border-radius: 50%;
+    border: 4px solid #1a1a2e
+}
+.sidebar p{
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    border-top:3px solid#1a1a2e;
+    border-radius: 3px;
+    padding-top: 5%;
+    width: 65%;
+    transition: text-shadow 0.3s ease-in-out;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*.sidebar img:hover {
+    
+    color: #eeeee4; 
+    animation: tremor 0.4s ease-in-out infinite;
+}*/
+.main h1:hover {
+    text-shadow: 0 0 15px rgba(150, 117, 117, 0.5);   
+}
+.sidebar p:hover {
+    text-shadow: 0 0 7px rgba(150, 117, 117, 0.5);   
+}
+@keyframes tremor {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            'header'
+            'main'
+            'sidebar'
+            'footer';
+        height: auto; 
+    }
+    
+    .sidebar {
+        width: 100%; 
+        padding: 20px; 
+        order: 2; 
+    }
+    .sidebar p{
+        font-size: 80%;
+        width: 90%;
+    }
+    .main {
+        padding: 10px; 
+        order: 1; 
+    }
+    
+    .main h1 {
+        font-size: 2rem; 
+        width: 100%;
+        text-align: center;
+    }
+}
