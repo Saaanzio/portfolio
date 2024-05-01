@@ -145,6 +145,10 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+.meusprojetos{
+    display: flex;
+    flex-wrap: wrap;
+}
 .titulo{
     color: white;
     margin-bottom: 50px;
@@ -180,7 +184,7 @@ body {
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
 .projeto:not(:last-child) {
-    border-bottom: 3px solid #1a1a2e; /* Ajuste a cor e a largura da borda conforme necessário */
+    border-bottom: 3px solid #1a1a2e;
 }
 
 
@@ -202,11 +206,17 @@ body {
             'footer';
         height: auto; 
     }
-    
-    .sidebar {
-        width: 100%; 
-        padding: 20px; 
-        order: 2; 
+    .sidebar img{
+        width: 80%;
+    }
+    .sidebar ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-top: 5%;
     }
     .sidebar p{
         font-size: 80%;
