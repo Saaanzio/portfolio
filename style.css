@@ -127,7 +127,7 @@ body {
     
 }
 .lowergrid{
-    background: linear-gradient(to top, rgb(218, 211, 122), rgba(26, 25, 17, 0.041));
+    background: linear-gradient(to top, rgb(122, 218, 205), rgba(26, 25, 17, 0.041));
     display: grid;
     justify-content: space-between;
     height: 125vh;
