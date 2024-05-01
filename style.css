@@ -203,7 +203,7 @@ body {
         width: 60%;
     }
 }
-@media (max-width: 1524px) {
+@media (max-width: 1724px) {
     .main h1 {
         font-size: 5rem;
     }
