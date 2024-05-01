@@ -19,3 +19,21 @@ function smoothScrollDown() {
 }
 
 scrollArrow.addEventListener('click', smoothScrollDown);
+//Não é efetivo nem bonito, porém a outra solução não está funcionando!!! (consertarei ASAP)
+function botaoProjeto(x){
+    var URL;
+    switch (x){
+        case 1:
+            URL = "https://github.com/TIAW2023/projetotiaw-alunos-do-site-sobre-jogos.git"
+            break;
+        case 2:
+            URL = "https://github.com/Pedro-Resende-VEVO/Extensao-Igreja_Renovar.git";
+            break;
+        case 3:
+            URL ="https://github.com/PSG-TIAPN-2022-1/psg-tiapn-2024-1-projeto-euler.git";
+        default:
+            break;
+    }
+    window.open(URL,'_blank')
+
+}
