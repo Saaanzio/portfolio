@@ -76,8 +76,22 @@ body {
     text-shadow: 0 0 7px rgba(150, 117, 117, 0.5);   
 }
 .sidebar a{
-    color: inherit;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    margin-top: 5%;
+    padding: 0;
+}
+.sidebar li{
+    list-style-type: none;
 }
 @keyframes tremor {
     0% { transform: translateX(0); }
