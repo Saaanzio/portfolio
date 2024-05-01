@@ -156,7 +156,7 @@ body {
 .titulo{
     color: white;
     margin-bottom: 50px;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .projeto{
@@ -178,7 +178,7 @@ body {
 }
 .projeto h1{
     margin: 20px;
-   
+   font-size: 2rem;
 }
 .projeto a{
     text-decoration: none;
