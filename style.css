@@ -114,6 +114,7 @@ body {
 }
 .footer i{
     margin-bottom: 15px;
+    cursor: pointer;
 }
 #scroll-arrow {
     transition: opacity 0.3s ease-in-out; 
