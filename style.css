@@ -172,13 +172,13 @@ body {
 }
 .projeto img{
     border-radius: 15px;
-    height: 70%;
+    height: 60%;
     width: 30%;
     border: 2.5px solid #1a1a2e;
 }
 .projeto h1{
     margin: 20px;
-   font-size: 2rem;
+   font-size: 1.5rem;
 }
 .projeto a{
     text-decoration: none;
