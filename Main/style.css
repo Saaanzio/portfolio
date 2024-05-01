@@ -123,6 +123,7 @@ body {
     font-family: "Archivo Black", sans-serif;
     font-style: normal;
     font-weight: 400;
+    
 }
 .lowergrid{
     background: linear-gradient(to top, rgb(218, 211, 122), rgba(26, 25, 17, 0.041));
@@ -140,6 +141,8 @@ body {
     border-radius: 25px;
     display: flex;
     justify-content: center;
+}.lowergrid h1:hover {
+    text-shadow: 0 0 7px rgba(150, 117, 117, 0.5);   
 }
 .extensao{
     display: flex;
@@ -153,6 +156,7 @@ body {
     color: white;
     margin-bottom: 50px;
     font-size: 4rem;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 .projeto{
     width: 80%;
@@ -163,6 +167,7 @@ body {
     align-items: center;
     flex-direction: column;
     cursor:pointer;
+    margin: 10px;
 }
 .projeto img{
     border-radius: 15px;
@@ -186,8 +191,45 @@ body {
 .projeto:not(:last-child) {
     border-bottom: 3px solid #1a1a2e;
 }
-
-
+@media (max-width: 1924px) {
+    .main h1 {
+        font-size: 6rem;
+    }
+    .projeto img{
+        width: 50%;;
+    }
+}
+@media (max-width: 1524px) {
+    .main h1 {
+        font-size: 5rem;
+    }
+    .grid{
+        grid-template-areas:
+            'header'
+            'main'
+            'sidebar'
+            'footer';
+        grid-template-columns: 1fr; 
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projeto img{
+        width: 50%;;
+    }.sidebar{
+        position: relative;
+        left: 4.5%;
+        width: 90%;
+    }
+    .projeto h1{
+        font-size: 1rem;
+    }
+}
 @keyframes tremor {
     0% { transform: translateX(0); }
     25% { transform: translateX(-2px); }
@@ -195,7 +237,10 @@ body {
     75% { transform: translateX(-2px); }
     100% { transform: translateX(0); }
 }
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
+    body{
+        height: auto;   
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr; 
@@ -232,4 +277,41 @@ body {
         width: 100%;
         text-align: center;
     }
+    .sidebar p{
+        font-size: 2rem;
+    }
+    .lowergrid{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto; 
+        grid-template-areas:
+            'extensao'
+            'meusprojetos';
+    }
+    .projeto{
+        height: 40%;
+    }
+    .lowergrid div{
+        width: 100vw;
+    }
+    .projeto img{
+        width: 50%;
+        height: 70%;
+    }
+    .projeto h1{
+        font-size: 1rem;
+    }
+    .titulo{
+        font-size: 2rem;
+        flex-wrap: nowrap;
+    }
+    #ultimo{
+        display: none;
+    }
+    .meusprojetos{
+        margin-top: 50px;
+    }
+    
 }
