@@ -235,6 +235,7 @@ body {
     }
     .titulo{
         font-size: 1.5rem;
+        margin-top: 2em;
     }
     .projeto{
         height: 27%;
