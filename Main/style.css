@@ -30,9 +30,9 @@ body {
     font-style: normal;
     font-weight: 400;
     color: white;
-    font-size: 7rem;
+    font-size: 9rem;
     margin: 0;
-    width: 90%;
+    width: 100%;
     transition: text-shadow 0.3s ease-in-out;
     text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
@@ -57,6 +57,7 @@ body {
     font-style: normal;
     font-weight: 400;
     color: white;
+    font-size: 1.8rem;
     border-top:3px solid#1a1a2e;
     border-radius: 3px;
     padding-top: 5%;
@@ -118,15 +119,67 @@ body {
     transition: opacity 0.3s ease-in-out; 
     opacity: 1; 
 }
+.lowergrid h1{
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
 .lowergrid{
     background: linear-gradient(to top, rgb(218, 211, 122), rgba(26, 25, 17, 0.041));
     display: grid;
-    height: 100vh;
-    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    height: 115vh;
+    padding: 150px;
+    column-gap: 50px;
     grid-template-areas:
-        'header header'
-        'main sidebar'
-        'footer footer';
+        'extensao meusprojetos';
+}
+.lowergrid div{
+    width: 30vw;
+    height: 80vh;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+.extensao{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulo{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 4rem;
+}
+.projeto{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    padding: 10px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.projeto img{
+    border-radius: 15px;
+    height: 70%;
+    width: 30%;
+    border: 3px solid #1a1a2e;
+}
+.projeto h1{
+    margin: 20px;
+   
+}
+.projeto a{
+    text-decoration: none;
+    color:#1a1a2e;
+}
+.projeto:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+.projeto:not(:last-child) {
+    border-bottom: 3px solid #1a1a2e; /* Ajuste a cor e a largura da borda conforme necessário */
 }
 
 
