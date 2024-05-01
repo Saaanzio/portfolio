@@ -3,7 +3,7 @@
 
 body {
     background: linear-gradient(to right, #1a1a2e, #2a2a3e);
-    height: 200vh;
+    height: auto;
     margin: 0;
 }
 
@@ -198,6 +198,9 @@ body {
     }
     .projeto img{
         width: 50%;;
+    }
+    .sidebar ul{
+        width: 60%;
     }
 }
 @media (max-width: 1524px) {
