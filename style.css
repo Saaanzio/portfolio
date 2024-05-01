@@ -236,6 +236,9 @@ body {
     .titulo{
         font-size: 2rem;
     }
+    .projeto{
+        height: 27%;
+    }
 }
 @keyframes tremor {
     0% { transform: translateX(0); }
