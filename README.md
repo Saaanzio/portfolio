@@ -1,6 +1,6 @@
 # Portifólio realizado em HTML, CSS e JAVASCRIPT. 
 
-Para intale a branch VSCode que funciona em qualquer lugar. 
+Instale a branch VSCode para ver o portfolio pelo VSCode e outras IDEs. 
 
 A versão main é **SOMENTE PARA o Github pages!!!**
 
