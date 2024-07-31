@@ -33,7 +33,7 @@ function botaoProjeto(x){
             URL ="https://github.com/PSG-TIAPN-2022-1/psg-tiapn-2024-1-projeto-euler.git";
             break;
         case 4:
-            URL ="https://github.com/Saaanzio/PaginaLoginRegistro.git";
+            URL ="https://github.com/Saaanzio/LoginAndRegister.git";
             break;
         case 5:
             URL ="https://github.com/Saaanzio/Mine-Sweeper.git";
